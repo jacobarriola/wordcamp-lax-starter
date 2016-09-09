@@ -1,0 +1,22 @@
+.logos-container {
+  background-color: #efefef;
+  padding: 2.5em 0;
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+.logo-list {
+  @include reset-list;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  li {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    max-width: 100px;
+  }
+}

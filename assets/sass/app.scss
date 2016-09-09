@@ -1,0 +1,58 @@
+@import 'base/typography';
+
+// Foundation override file
+@import "settings";
+
+// Import Foundation
+@import "../../node_modules/foundation-sites/scss/foundation";
+
+// Select the components you want to use
+@include foundation-global-styles;
+@include foundation-grid; // float-based grid
+// Flexbox
+// If you want to run a flexbox-powered grid system, uncomment @include
+// foundation-flex-grid mixin and comment out the foundation-grid mixin.
+//
+//@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+// @include foundation-forms;
+// @include foundation-visibility-classes;
+// @include foundation-float-classes;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+// @include foundation-button-group;
+// @include foundation-callout;
+// @include foundation-close-button;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+// @include foundation-flex-video;
+// @include foundation-label;
+// @include foundation-media-object;
+// @include foundation-menu;
+// @include foundation-off-canvas;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-slider;
+// @include foundation-sticky;
+// @include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+// @include foundation-tabs;
+// @include foundation-thumbnail;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
+// @include foundation-top-bar;
+
+// Our most basic level file type (variables, typography, etc)
+@import "base/base";
+
+// Our second level of file types that make up base files (forms, lists, etc)
+@import "components/components";
+
+// Flexbox styles
+@import "flex-styles/flex-styles";

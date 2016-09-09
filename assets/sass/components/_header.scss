@@ -1,0 +1,31 @@
+.site-header {
+  background-color: orange;
+  padding: 1.25em;
+}
+
+.site-navigation-list {
+  @include reset-list;
+  
+  li {
+    font-size: .875em;
+    padding: 0 .5em;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.site-logo {
+  color: color('white');
+  font-family: 'Pacifico';
+  font-size: 2em;
+  line-height: 1;
+  padding: 0 .25em .25em .25em;
+  margin-bottom: .25em;
+
+  @include breakpoint(medium) {
+    margin-bottom: 0;
+  }
+}

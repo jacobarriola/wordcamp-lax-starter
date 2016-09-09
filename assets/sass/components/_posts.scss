@@ -1,0 +1,44 @@
+.grey-background {
+  background: #eee;
+  margin: 0 auto 2.5em auto;
+  padding: 2.5em .9375em;
+}
+
+.post-container-title {
+  font-size: 1.5em;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25em;
+}
+
+
+.post {
+  background-color: color('white');
+  max-width: 1200px;
+  margin-right: auto;
+  margin-bottom: 1.25em;
+  margin-left: auto;
+}
+
+.post-img {
+  background: url('../../img/post-1.jpeg') center / cover no-repeat #000;
+  height: 300px;
+
+  &.last {
+    background: url('../../img/post-2.jpeg') center / cover no-repeat #000;
+  }
+}
+
+.post-title {
+  font-size: 1.75em;
+}
+
+.post-content {
+  padding: .9375em;
+
+  @include breakpoint(medium) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

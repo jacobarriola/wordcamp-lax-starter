@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Color palette function
+////////////////////////////////////////////////////////////////////////////////
+
+$colors: (
+ 'pink': (
+   base: #e72683,
+ ),
+ 'blue': (
+   base: #5cb1cc,
+ ),
+ 'yellow': (
+   base: #D3FF42,
+ ),
+ 'black': (
+   base: #1b2433,
+   trans: transparentize(#000, .3)
+ ),
+ 'white': (
+   base: #fff,
+ ),
+ 'social': (
+    facebook: #3c5a9a,
+    twitter: #55acee
+  )
+);
+
+@function color($color-name, $tone: base) {
+    @return map-get(map-get($colors, $color-name), $tone);
+}
+
+//usage
+// a {
+//   color: color('grey', 'dark');
+// }
